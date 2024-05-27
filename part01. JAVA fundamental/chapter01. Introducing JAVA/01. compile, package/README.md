@@ -3,19 +3,20 @@
 - JAVA는 source 파일 및 컴파일된 ByteCode 파일을 쉽게 관리 하기 위해 **Package**를 사용
 - ``package pack.age;``와 같은 형식으로 패키지 선언
 - File System의 Directory와 비슷한 개념
-- project_base\src : source 파일이 저장되는 directory
-- project_base\bin : ByteCode 파일이 저장되는 directory
-- 패키지 선언이 포함된 source 파일을 컴파일하면 bin directory 하위에 패키지 선언한대로의 구조로 .class 파일이 생성됨
+- project_base\pack\age 경로에 source파일들이 저장 : source 파일이 저장되는 directory
+- 패키지 선언이 포함된 source 파일을 컴파일하면, .class파일을 저장할 directory 아래에 패키지 선언한대로의 구조로 .class 파일이 생성됨
 - project_base<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- src<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- pack<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--age<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Hello.java<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- bin<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- pack<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- age<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--Hello.java<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- out<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- pack<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--age<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Hello.class
+  - IntelliJ IDEA의 경우 위처럼 'out'폴더 아래에 컴파일 결과물들(.class 포함)을 저장하여 관리한다.
+  - Eclipse IDE의 경우에는 소스 파일들은 'src' 폴더 아래에, 컴파일 결과물들은 'bin'폴더 아래에 저장하여 관리한다.
 ## Compiling without IDE, Package 실습
+#### ※ Eclipse IDE가 source 및 bytecode 파일들을 관리하는 방식으로 진행해본다.
 1. terminal을 실행한 후 현재 경로를 project_base로 이동한다.
 2. directory tree를 아래와 같이 구성한다.<br>
 project_base<br>

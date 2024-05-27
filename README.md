@@ -8,4 +8,4 @@
 ## Environment
 - OS : Windows 10 64-bit
 - JDK : Orakle JDK 21
-- IDE : Eclipse IDE for Java Developers
+- IDE : IntelliJ IDEA Community Edition (* 교재에서는 Eclipse로 진행하나, 편의상 IntelliJ를 채택했습니다.)

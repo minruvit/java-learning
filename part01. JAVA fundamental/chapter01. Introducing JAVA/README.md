@@ -77,4 +77,4 @@
 5. terminal을 새로 시작 후, `java -version`, `javac -version` 명령어를 실행하여 제대로 출력되는지 확인
 #### ※ 이를 응용하면 여러 version의 JDK을 필요에 따라 바꾸어 사용할 수 있다.
 ### IDE 설치
-- JDK 21을 지원하는 버전의 Eclipse IDE 내려받기 및 설치
+- IntelliJ IDEA community 설치

@@ -11,7 +11,7 @@
 - String 타입은 JAVA Primitive Type Variable에 속하지 않고, Reference Type(참조 타입)에 속한다! (5장)
 - char 타입 변수와는 달리, 변수값이 Unicode로 변환되지 않는다.
 ## 이스케이프 문자(Escape character)
-- 문자열 내부에 역슬래쉬(\)가 붙은 문자들.
+- 문자열 내부에 역슬래쉬(\\)가 붙은 문자들.
 - 특정 문자를 포함할 수 있고, 출력에 영향을 미친다.
 - 이스케이프 문자
 

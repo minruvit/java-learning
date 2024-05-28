@@ -18,6 +18,10 @@
   char charValue = 'A';
   int intValue = charValue;     // 65가 저장됨
   ```
+- float 타입의 경우 double 타입으로 자동 타입 변환되면 빈 공간을 0으로 채운다.
+  - 지수부(E)는 float의 기저인 127을 뺀 후 double의 기저인 1023을 더해 변환한다.
+  - 가수부(M)는 float의 가수 23자리를 채우고 남은 자리를 0으로 채운다.
+    - 출처 : [https://devroy.tistory.com/9](https://devroy.tistory.com/9)
 - 메모리에서 값이 복사되는 모양
   - 기존 byte 타입(1byte)의 변수에 '10'이 저장돼있을 때
   

@@ -1,7 +1,10 @@
 ## 강제 타입 변환(Casting)
-- 강제로 큰 허용 범위의 타입을 작은 허용 범위의 타입으로 쪼개어서 저장하는 것
-- 캐스팅 연산자로 괄호()를 사용, 괄호 안에 들어가는 타입은 '쪼갤 단위'
-- 작은 혀용 범위 타입 = (작은 허용 범위 타입)큰 허용 범위 타입
+- 강제로 다른 타입으로 변환하는 것
+- 캐스팅 연산자로 괄호()를 사용, 괄호 안에 들어가는 타입은 '변환할 타입'
+- 작은 범위 타입을 큰 범위 타입으로 casting : 확대 변환(widening conversion)
+- 큰 범위 타입을 작은 범위 타입으로 casting : 축소 변환(narrowing conversion)
+  - 축소 변환의 경우 데이터의 손실이 발생할 수 있다.
+#### 이 장에서는 narrowing conversion을 다룹니다!
 ### 부호 있는 정수 타입
 ```java
 int intValue = 10;
@@ -80,4 +83,6 @@ float floatValue = (float)doubleValue;
 - float 타입의 범위를 초과하는 값을 float으로 형변환하는 경우, '무한대' 또는 '+-0'을 결과로 얻는다.
 - 출처 : [https://devroy.tistory.com/9](https://devroy.tistory.com/9)
 ### CastingExample.java 예제 참고
-## 여기까지 살펴본 내용들로 말미암아, 변수 타입은 저장된 일련의 bit들을 '읽는 방식'과 관련이 있음을 알 수 있다!
+### 여기까지 살펴본 내용들로 말미암아, 변수 타입은 저장된 일련의 bit들을 '읽는 방식'과 관련이 있음을 알 수 있다!
+### Promotion vs Casting : 자동적이냐, 강제적이냐?
+### 다음 절에서 Widening conversion을 다룹니다.
